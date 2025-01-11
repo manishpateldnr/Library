@@ -1,7 +1,6 @@
 # Library Management System  
 
-A user-friendly Library Management System that simplifies operations like book issuance, returns, fine payments, membership management, and user handling, ensuring efficient library administration.
-
+The Library Management System is a user-friendly and efficient software designed to manage library operations seamlessly. This system simplifies tasks like book issuance, returns, fine payments, membership management, and user handling, making it ideal for libraries of any size. It caters to both administrators and users, with specific access levels to ensure security and accountability.
 ---
 
 ## 📚 Features  
