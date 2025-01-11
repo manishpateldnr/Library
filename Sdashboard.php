@@ -1,8 +1,8 @@
 <?php
 session_start();
-if (!isset($_SESSION['loged_in']) || $_SESSION['loged_in'] !== true || $_SESSION['user_type'] !== 'admin') {
+if (!isset($_SESSION['loged_in']) || $_SESSION['loged_in'] !== true || $_SESSION['user_type'] !== 'user') {
     // Redirect to login page or show error message
-    header("Location: Alogin.php");
+    header("Location: Slogin.php");
     exit;
 }
 include_once "./db/db.php";
@@ -42,10 +42,10 @@ unset($_SESSION['msg']);
     <section class="body d-flex w-100">
         <div class="left-side col-3 bg-success-subtle">
             <div class="container d-flex flex-column  mt-5">
-                <a class="btn btn-primary mt-3" href="./Maintanence.php">Maintanence Menu</a>
                 <a class="btn btn-primary mt-3" href="./Reports.php">Reports Menu</a>
                 <a class="btn btn-primary mt-3" href="./Transactions.php">Transactions</a>
             </div>
+            <a href="./Adashboard.php" class="btn btn-sm ms-1 mt-2">Home...</a>
         </div>
         <div class="right-side col-9 ">
             <div class="container d-flex flex-column"> 

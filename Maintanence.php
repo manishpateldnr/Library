@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['loged_in']) || $_SESSION['loged_in'] !== true ) {
+if (!isset($_SESSION['loged_in']) || $_SESSION['loged_in'] !== true || $_SESSION['user_type'] !== 'admin') {
     // Redirect to login page or show error message
     header("Location: Alogin.php");
     exit;
@@ -42,28 +42,23 @@ unset($_SESSION['msg']);
     <section class="body d-flex w-100">
         <div class="left-side col-3 bg-success-subtle">
             <div class="container d-flex flex-column  mt-5">
-                <?php if($_SESSION['user_type'] == 'admin'){ ?>
-                    <a class="btn btn-primary mt-3" href="./Maintanence.php">Maintanence Menu</a>
-                <?php } ?>
+                <a class="btn btn-success mt-3" href="#">Maintanence Menu</a>
                 <a class="btn btn-primary mt-3" href="./Reports.php">Reports Menu</a>
-                <a class="btn btn-success mt-3" href="#">Transactions</a>
+                <a class="btn btn-primary mt-3" href="./Transactions.php">Transactions</a>
             </div>
-            <?php if($_SESSION['user_type'] == 'admin'){ ?>
-                <a href="./Adashboard.php" class="btn btn-sm ms-1 mt-2">Home...</a>
-            <?php }else{ ?>
-                <a href="./Sdashboard.php" class="btn btn-sm ms-1 mt-2">Home...</a>
-            <?php } ?>
+            <a href="./Adashboard.php" class="btn btn-sm ms-1 mt-2">Home...</a>
         </div>
         <div class="right-side col-9 ">
             <div class="container d-flex flex-column"> 
-                <div class="row mt-4 ">
-                    <h3 class="col text-center">Transactions</h3>
+                <div class="row mt-4">
+                    <h3 class="col text-center">Maintanence Menu</h3>
                 </div>
                 <div class="bg-success-subtle m-4 p-2 rounded shadow text-center d-flex flex-column align-items-center">
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50">Is book available?</a>
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Issue book?</a>
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Return book?</a>
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Pay Fine?</a>
+                    <a href="Addmembership.php" class="btn btn-outline-dark w-50">Membership Add</a>
+                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Membership update</a>
+                    <a href="Addbook.php" class="btn btn-outline-dark w-50 mt-2">Book Add</a>
+                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Book update</a>
+                    <a href="ManageUser.php" class="btn btn-outline-dark w-50 mt-2">User Management</a>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['loged_in']) || $_SESSION['loged_in'] !== true || $_SESSION['user_type'] !== 'admin') {
+if (!isset($_SESSION['loged_in']) || $_SESSION['loged_in'] !== true ) {
     // Redirect to login page or show error message
     header("Location: Alogin.php");
     exit;
@@ -42,10 +42,17 @@ unset($_SESSION['msg']);
     <section class="body d-flex w-100">
         <div class="left-side col-3 bg-success-subtle">
             <div class="container d-flex flex-column  mt-5">
-                <a class="btn btn-primary mt-3" href="./Adashboard.php">Maintanence Menu</a>
+                <?php if($_SESSION['user_type'] == 'admin'){ ?>
+                    <a class="btn btn-primary mt-3" href="./Maintanence.php">Maintanence Menu</a>
+                <?php } ?>
                 <a class="btn btn-success mt-3" href="#">Reports Menu</a>
                 <a class="btn btn-primary mt-3" href="./transactions.php">Transactions</a>
             </div>
+            <?php if($_SESSION['user_type'] == 'admin'){ ?>
+                <a href="./Adashboard.php" class="btn btn-sm ms-1 mt-2">Home...</a>
+            <?php }else{ ?>
+                <a href="./Sdashboard.php" class="btn btn-sm ms-1 mt-2">Home...</a>
+            <?php } ?>
         </div>
         <div class="right-side col-9 ">
             <div class="container d-flex flex-column"> 

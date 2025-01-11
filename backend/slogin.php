@@ -30,13 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             
             $_SESSION['loged_in'] = true;
             $_SESSION['user_id'] = $user['id'];
-            $_SESSION['reg_no'] = $user['reg_no'];
             $_SESSION['name'] = $user['name'];
             $_SESSION['email'] = $user['email'];
-            $_SESSION['sec'] = $user['sec'];
-            $_SESSION['dept'] = $user['dept'];
-            $_SESSION['course'] = $user['course'];
-            $_SESSION['sub_registred'] = $user['sub_registred'];
             $_SESSION['user_type'] = "user";
             // Redirect to the dashboard or another page
             header("Location: /library/Sdashboard.php");
