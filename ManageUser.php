@@ -106,7 +106,7 @@ unset($_SESSION['msg']);
 
         // Send AJAX request
         $.ajax({
-            url: "http://localhost/cbtest/backend/check_slot.php", // Replace with your backend file path
+            url: "http://localhost/library/backend/check_slot.php", // Replace with your backend file path
             type: "POST",
             data: {
                 start_date: date,

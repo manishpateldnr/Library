@@ -38,67 +38,67 @@ unset($_SESSION['msg']);
 <?php include_once './layout/navbar.php'; ?>
 
     <div class="container card my-3 w-50 shadow py-2">
-        <h2 class="text-center mb-4">Add Student</h2>
-        <form action="./backend/addstudent.php" method="post">
+        <h2 class="text-center mb-4">Add Membership</h2>
+        <form action="./backend/addmembership.php" method="post">
             <div class="d-flex justify-content-evenly">
                 <div class="left ">
 
                     <div class="mb-3">
-                        <label for="reg" class="form-label">First Name</label>
-                        <input type="text" name="reg" id="reg" class="form-control" 
+                        <label for="fname" class="form-label">First Name</label>
+                        <input type="text" name="fname" id="fname" class="form-control" 
                             required>
                     </div>
                     <!-- Test Name -->
                     <div class="mb-3">
-                        <label for="name" class="form-label">Contact Name</label>
-                        <input type="text" name="name" id="name" class="form-control"
+                        <label for="Cname" class="form-label">Contact Name</label>
+                        <input type="text" name="cname" id="cname" class="form-control"
                             required>
                     </div>
 
                     <!-- Start Date -->
                     <div class="mb-3">
-                        <label for="start date" class="form-label">Start Date</label>
-                        <input type="" name="email" id="email" class="form-control" required>
+                        <label for="sdate" class="form-label">Start Date</label>
+                        <input type="date" name="sdate" id="sdate" class="form-control" required>
                     </div>
                     <div class="mb-3">
-                        <label for="start date" class="form-label">Adhar Card No.</label>
-                        <input type="" name="email" id="email" class="form-control" required>
+                        <label for="adhar" class="form-label">Adhar Card No.</label>
+                        <input type="text" name="adhar" id="adhar" class="form-control" required>
                     </div>
                     
                 </div>
 
                 <div class="right">
                     <div class="mb-3">
-                        <label for="dept" class="form-label">Last Name</label>
-                        <input type="text" name="name" id="name" class="form-control" 
+                        <label for="lname" class="form-label">Last Name</label>
+                        <input type="text" name="lname" id="lname" class="form-control" 
                             required>
                     </div>
                     <div class="mb-3">
-                        <label for="dept" class="form-label">Contact Address</label>
-                        <input type="text" name="name" id="name" class="form-control" 
+                        <label for="address" class="form-label">Contact Address</label>
+                        <input type="text" name="address" id="address" class="form-control" 
                             required>
                     </div>
                     <div class="mb-3">
-                        <label for="start date" class="form-label">End Date</label>
-                        <input type="" name="email" id="email" class="form-control" required>
+                        <label for="edate" class="form-label">End Date</label>
+                        <input type="date" name="edate" id="edate" class="form-control" required>
                     </div>
                     <div class="mb-3">
                         <div class="row">
                             <p>Membership</p>
                             <div class="form-check col-4">
-                                <input class="form-check-input"  type="radio" name="membership" id="" value="6months" >
+                                <input class="form-check-input"  type="radio" name="membership" id="6months" value="6months" >
                                 <label class="form-check-label" for="">
                                     6 m
                                 </label>
                             </div>
                             <div class="form-check col-4">
-                                <input class="form-check-input"  type="radio" name="membership" id="" value="1year" >
+                                <input class="form-check-input"  type="radio" name="membership" id="1year" value="1year" >
                                 <label class="form-check-label" for="">
                                     1 yr
                                 </label>
                             </div>
                             <div class="form-check col-4">
-                                <input class="form-check-input"  type="radio" name="membership" id="" value="2year" >
+                                <input class="form-check-input"  type="radio" name="membership" id="2year" value="2year" >
                                 <label class="form-check-label" for="">
                                     2 yr
                                 </label>
@@ -111,14 +111,18 @@ unset($_SESSION['msg']);
             <!-- Submit Button -->
             <div class="text-center">
                 <p id="slot_result"></p>
-                <button type="submit" id="submitbtn" class="btn btn-primary btn-lg">Submit</button>
+                <button type="submit" id="submitbtn" class="btn btn-primary">Submit</button>
+                <button class="btn btn-danger " onclick="cancle()">Cancle</button>
             </div>
         </form>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script>
-
+    function cancle(){
+        alert("Transaction cancelled");
+        window.history.back();
+    }
     // Function to check the slot availability
     function checkSlot() {
         let date = $("#start_date").val();
@@ -157,24 +161,7 @@ unset($_SESSION['msg']);
             }
         });
     }
-    function confirmpass() {
-            var pass1 = document.getElementById("password").value;
-            var pass2 = document.getElementById("confirmpassword").value;
-            var confirmInput = document.getElementById("password");
-            var submitBtn = document.getElementById("submitbtn");
-
-            if (pass1 !== pass2) {
-                // If passwords don't match, apply red border and disable submit button
-                confirmInput.classList.add("error");
-                confirmInput.classList.remove("valid");
-                submitBtn.disabled = true;
-            } else {
-                // If passwords match, apply green border and enable submit button
-                confirmInput.classList.remove("error");
-                confirmInput.classList.add("valid");
-                submitBtn.disabled = false;
-            }
-        }
+    
     </script>
 </body>
 

@@ -12,8 +12,8 @@
     </div>
     <!-- Copyright -->
     <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2024 Copyright:
-      <a class="text-white" href="./">onlineexam.com</a>
+      © 2025 Copyright:
+      <a class="text-white" href="./">librarymanagementsystem.com</a>
     </div>
     <!-- Copyright -->
   </footer>

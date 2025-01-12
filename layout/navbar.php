@@ -1,9 +1,9 @@
 <nav class="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="./">
-                <img src="./assests/images/icon.jpg" width="30"
+                <img src="./assests/images/icon2.jpg" width="30"
                     height="24" class="d-inline-block align-text-top">
-                Online Exam
+                    Library Management System
                 <?php   
               if (isset($_SESSION['loged_in'])) {
           ?>

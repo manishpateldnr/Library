@@ -23,7 +23,7 @@ unset($_SESSION['msg']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include "./layout/hlink.php"?>
-    <title>CBtest | Student login</title>
+    <title>Library | Student login</title>
 </head>
 <body>
 <nav>
@@ -33,11 +33,11 @@ unset($_SESSION['msg']);
         <div class="container-fluid ">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-md-9 col-lg-6 col-xl-5">
-              <img src="./assests/images/main.jpg "
+              <img src="./assests/images/S.jpg "
                 class="img-fluid" alt="Sample image">
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-            <h2>Student Login</h2>
+            <h2>User Login</h2>
               <form action="./backend/slogin.php" method="post">
                 <!-- Email input -->
                 <div data-mdb-input-init class="form-outline mb-4">

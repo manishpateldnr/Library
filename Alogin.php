@@ -20,7 +20,7 @@ unset($_SESSION['msg']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include "./layout/hlink.php"?>
-    <title>CBtest | Admin login</title>
+    <title>Library | Admin login</title>
 </head>
 <body>
   <nav>
@@ -30,7 +30,7 @@ unset($_SESSION['msg']);
         <div class="container-fluid h-custom">
           <div class=" row d-flex justify-content-center align-items-center h-100">
             <div class="col-md-9 col-lg-6 col-xl-5 ">
-              <img src="./assests/images/main.jpg"
+              <img src="./assests/images/main2.jpg"
                 class="img-fluid rounded shadow" alt="Sample image">
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
