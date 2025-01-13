@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $isAdmin = isset($_POST['Checkadmin']) ? 1 : 0;
 
     // Insert or manage user based on type
-    $sql = "INSERT INTO users (user_type, name, is_active, is_admin) 
+    $sql = "INSERT INTO user (user_type, name, is_active, is_admin) 
             VALUES ('$type', '$name', '$isActive', '$isAdmin')";
 
     if (mysqli_query($conn, $sql)) {

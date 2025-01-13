@@ -55,9 +55,9 @@ unset($_SESSION['msg']);
                 </div>
                 <div class="bg-success-subtle m-4 p-2 rounded shadow text-center d-flex flex-column align-items-center">
                     <a href="Addmembership.php" class="btn btn-outline-dark w-50">Membership Add</a>
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Membership update</a>
+                    <a href="Mupdate.php" class="btn btn-outline-dark w-50 mt-2">Membership update</a>
                     <a href="Addbook.php" class="btn btn-outline-dark w-50 mt-2">Book Add</a>
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Book update</a>
+                    <a href="Bupdate.php" class="btn btn-outline-dark w-50 mt-2">Book update</a>
                     <a href="ManageUser.php" class="btn btn-outline-dark w-50 mt-2">User Management</a>
                 </div>
             </div>

@@ -19,7 +19,7 @@ unset($_SESSION['msg']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add New Test</title>
+    <title>Add New Member</title>
     <?php include "./layout/hlink.php"?>
     <!-- Include jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
