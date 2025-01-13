@@ -136,7 +136,7 @@ if (!$result) {
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="display-6 text-center">Inventory Management</h2>
+                        <h2 class="display-6 text-center">Master list of book/Movie</h2>
                     </div>
                     <div class="card-body">
                         <table class="table table-bordered table-striped text-center">
