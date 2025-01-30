@@ -131,14 +131,16 @@ if (!$result) {
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="display-6 text-center">Master list of book/Movie</h2>
-                    </div>
-                    <div class="card-body">
+<div class="container">
+    <div class="row mt-5">
+        <div class="col">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h2 class="display-6">Master list of books/Movies</h2>
+                    <a href="Reports.php" class="btn-back">← Back to Dashboard</a>
+                </div>
+                <div class="card-body">
+                         
                         <table class="table table-bordered table-striped text-center">
                             <thead>
                                 <tr>

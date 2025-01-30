@@ -17,7 +17,7 @@ if (!$result) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Inventory Management</title>
+    <title>Book Update</title>
     <style>
         body {
             background-color: #f8f9fa;
@@ -131,14 +131,15 @@ if (!$result) {
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="display-6 text-center">Inventory Management</h2>
-                    </div>
-                    <div class="card-body">
+<div class="container">
+    <div class="row mt-5">
+        <div class="col">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h2 class="display-6">Update Books</h2>
+                    <a href="Maintanence.php" class="btn-back">← Back to Dashboard</a>
+                </div>
+                <div class="card-body">
                         <table class="table table-bordered table-striped text-center">
                             <thead>
                                 <tr>

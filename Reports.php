@@ -63,9 +63,9 @@ unset($_SESSION['msg']);
                     <a href="Lbook.php" class="btn btn-outline-dark w-50">Master List of Books</a>
                     <a href="Lbook.php" class="btn btn-outline-dark w-50 mt-2">Master List of Movies</a>
                     <a href="MList.php" class="btn btn-outline-dark w-50 mt-2">Master List of Memberships</a>
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Active Issues</a>
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Overdue returns</a>
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Pending Issue Requests</a>
+                    <a href="#" class="btn btn-outline-dark w-50 mt-2">Active Issues</a>
+                    <a href="#" class="btn btn-outline-dark w-50 mt-2">Overdue returns</a>
+                    <a href="#" class="btn btn-outline-dark w-50 mt-2">Pending Issue Requests</a>
                 </div>
             </div>
         </div>

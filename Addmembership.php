@@ -50,7 +50,7 @@ unset($_SESSION['msg']);
                     </div>
                     <!-- Test Name -->
                     <div class="mb-3">
-                        <label for="Cname" class="form-label">Contact Name</label>
+                        <label for="Cname" class="form-label">Contact Number</label>
                         <input type="text" name="cname" id="cname" class="form-control"
                             required>
                     </div>

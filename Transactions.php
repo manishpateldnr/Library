@@ -60,10 +60,10 @@ unset($_SESSION['msg']);
                     <h3 class="col text-center">Transactions</h3>
                 </div>
                 <div class="bg-success-subtle m-4 p-2 rounded shadow text-center d-flex flex-column align-items-center">
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50">Is book available?</a>
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Issue book?</a>
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Return book?</a>
-                    <a href="Editstudent.php" class="btn btn-outline-dark w-50 mt-2">Pay Fine?</a>
+                    <a href="#" class="btn btn-outline-dark w-50">Is book available?</a>
+                    <a href="#" class="btn btn-outline-dark w-50 mt-2">Issue book?</a>
+                    <a href="#" class="btn btn-outline-dark w-50 mt-2">Return book?</a>
+                    <a href="#" class="btn btn-outline-dark w-50 mt-2">Pay Fine?</a>
                 </div>
             </div>
         </div>

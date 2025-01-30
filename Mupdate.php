@@ -38,10 +38,19 @@ if (!$result) {
             padding: 20px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
-        }
-        .card-header h2 {
-            font-size: 24px;
             text-align: center;
+        }
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            background-color: #6c757d;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn-back:hover {
+            background-color: #5a6268;
         }
         .table {
             margin-top: 20px;
@@ -84,61 +93,19 @@ if (!$result) {
         .btn-delete:hover {
             background-color: #c82333;
         }
-        .right-side {
-    height: 89vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
-}
-
-.table-container {
-    width: 100%;
-    max-width: 800px; /* Optional: Set a max-width for the table container */
-    text-align: center; /* Center the text inside the container */
-}
-
-.table {
-    width: 100%;
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-.table th,
-.table td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #dee2e6;
-}
-
-.table th {
-    background-color: #007bff;
-    color: white;
-}
-
-.table tbody tr:hover {
-    background-color: #f1f1f1;
-}
-
-.table-striped tbody tr:nth-child(odd) {
-    background-color: #f9f9f9;
-}
-
-.table-striped tbody tr:nth-child(even) {
-    background-color: #f1f1f1;
-}
-
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="display-6 text-center">Update Membership</h2>
-                    </div>
-                    <div class="card-body">
+<div class="container">
+    <div class="row mt-5">
+        <div class="col">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h2 class="display-6">Update Membership</h2>
+                    <a href="Maintanence.php" class="btn-back">← Back to Dashboard</a>
+                </div>
+                <div class="card-body">
+
                         <table class="table table-bordered table-striped text-center">
                             <thead>
                                 <tr>
