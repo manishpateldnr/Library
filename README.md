@@ -1,11 +1,13 @@
-# Library Management System  
+# Library Management System  by manish kumar patel
 
 The Library Management System is a user-friendly and efficient software designed to manage library operations seamlessly. This system simplifies tasks like book issuance, returns, fine payments, membership management, and user handling, making it ideal for libraries of any size. It caters to both administrators and users, with specific access levels to ensure security and accountability.
 ---
 
-## 📚 Features  
+# 📚 Features  
+library features
 
-### Core Modules  
+
+## Core Modules  
 1. *Book Availability:*  
    - Search for books by title or author.  
    - Display results with selectable radio buttons.  
@@ -30,7 +32,8 @@ The Library Management System is a user-friendly and efficient software designed
 
 ---
 
-## 🔐 Access Control  
+# 🔐 Access Control  
 
 - *Admin:* Access to maintenance, reports, and transactions.  
 - *User:* Access to reports and transactions only.  
+

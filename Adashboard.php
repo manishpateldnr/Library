@@ -45,6 +45,7 @@ unset($_SESSION['msg']);
                 <a class="btn btn-primary mt-3" href="./Maintanence.php">Maintanence Menu</a>
                 <a class="btn btn-primary mt-3" href="./Reports.php">Reports Menu</a>
                 <a class="btn btn-primary mt-3" href="./Transactions.php">Transactions</a>
+            
             </div>
         </div>
         <div class="right-side col-9 ">

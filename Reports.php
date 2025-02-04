@@ -60,12 +60,12 @@ unset($_SESSION['msg']);
                     <h3 class="col text-center">Reports Menu</h3>
                 </div>
                 <div class="bg-success-subtle m-4 p-2 rounded shadow text-center d-flex flex-column align-items-center">
-                    <a href="Lbook.php" class="btn btn-outline-dark w-50">Master List of Books</a>
-                    <a href="Lbook.php" class="btn btn-outline-dark w-50 mt-2">Master List of Movies</a>
-                    <a href="MList.php" class="btn btn-outline-dark w-50 mt-2">Master List of Memberships</a>
-                    <a href="#" class="btn btn-outline-dark w-50 mt-2">Active Issues</a>
-                    <a href="#" class="btn btn-outline-dark w-50 mt-2">Overdue returns</a>
-                    <a href="#" class="btn btn-outline-dark w-50 mt-2">Pending Issue Requests</a>
+                    <a href="MLbooks.php" class="btn btn-outline-dark w-50">Master List of Books</a>
+                    <a href="MLmovies.php" class="btn btn-outline-dark w-50 mt-2">Master List of Movies</a>
+                    <a href="MLmembers.php" class="btn btn-outline-dark w-50 mt-2">Master List of Memberships</a>
+                    <a href="Activeissue.php" class="btn btn-outline-dark w-50 mt-2">Active Issues</a>
+                    <a href="Overduereturns.php" class="btn btn-outline-dark w-50 mt-2">Overdue returns</a>
+                    <a href="PIRequests.php" class="btn btn-outline-dark w-50 mt-2">Pending Issue Requests</a>
                 </div>
             </div>
         </div>
